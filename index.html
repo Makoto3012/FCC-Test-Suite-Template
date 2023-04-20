@@ -8,19 +8,53 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1>Hello World!</h1>
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    <h1 id="title">Suvery Form</h1>
+        <p id ="description">The following survey is to know your musical preferences</p>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label">Name</label>
+            <input id="name" type="text" placeholder="name" required>
+          </div>
+          <div class="form-group">
+            <label id="email-label">Email</label>
+            <input id="email" type="email" placeholder="email" required>
+          </div>
+          <div class="form-group">
+            <label id="number-label" type="number">Number</label>
+            <input id="number" placeholder="number" type="number"  min="1" max="99">
+          </div>
+          <div class="form-group">
+            <label id="age-label">Age</label>
+            <select id="dropdown">
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Favorite Artist</p>
+            <label>
+              <input value="Arcangel" type="radio" name="artistas" checked>ARCANGEL</input>
+            </label>
+            <label>
+              <input value="Cosculluela" type="radio" name="artistas">COSCULLUELA</input>
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <input value="song1" type="checkbox">Song 1
+            </label>
+            <label>
+              <input value="song2" type="checkbox">Song 2
+            </label>
+          </div>
+          <div class="form-group">
+            <textarea class="input-comment" placeholder="Enter your comment..."></textarea>
+          </div>
+          <div class="form-group">
+            <button id="submit" type="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
     <script  src="js/index.js"></script>
   </body>
 </html>
